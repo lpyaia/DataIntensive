@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataIntensive.Api", "DataIntensive.Api\DataIntensive.Api.csproj", "{90F914D1-88CB-4F00-9C11-DC360E7D7D13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataIntensive.Tests", "DataIntensive.Tests\DataIntensive.Tests.csproj", "{D3C731A8-2EEA-4A89-8829-6F5F6533AC27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90F914D1-88CB-4F00-9C11-DC360E7D7D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F914D1-88CB-4F00-9C11-DC360E7D7D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F914D1-88CB-4F00-9C11-DC360E7D7D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F914D1-88CB-4F00-9C11-DC360E7D7D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C731A8-2EEA-4A89-8829-6F5F6533AC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C731A8-2EEA-4A89-8829-6F5F6533AC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C731A8-2EEA-4A89-8829-6F5F6533AC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C731A8-2EEA-4A89-8829-6F5F6533AC27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BA99332-D224-4641-B0A9-45C7969DFD4D}
+	EndGlobalSection
+EndGlobal
