@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  # elasticsearch:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:7.11.1
+  #   ports:
+  #     - "9200:9200"
+  #     - "9300:9300"
+  #   networks:
+  #     - testes-elastic
+  #   environment:
+  #     discovery.type: single-node
+  #     ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+      
+  # kibana:
+  #   image: docker.elastic.co/kibana/kibana:7.11.1
+  #   ports:
+  #     - "5601:5601"
+  #   networks:
+  #     - testes-elastic
+  #   depends_on:
+  #     - elasticsearch
+  
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    container_name: MsSqlServer
+    user: root
+    environment:
+     - ACCEPT_EULA=Y
+     - SA_PASSWORD=Password!01
+    ports:
+     - "1433:1433"
+    volumes:
+     - sql_volume:/var/opt/mssql/data
+      
+# networks: 
+#   testes-elastic:
+#     driver: bridge
+
+volumes:
+  sql_volume:
