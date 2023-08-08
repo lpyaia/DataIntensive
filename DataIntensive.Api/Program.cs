@@ -49,11 +49,8 @@ using (var serviceScope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
@@ -65,6 +62,8 @@ app.Run();
 
 static async Task SeedData(DataIntensiveEntityFrameworkContext context)
 {
+    context.Database.Migrate();
+
     if (context.Set<Product>().Any()) return;
 
     var product1 = new Product
